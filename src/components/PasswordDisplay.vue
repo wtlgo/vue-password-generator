@@ -21,12 +21,14 @@ const props = defineProps<{ password: string }>();
 const { password } = toRefs(props);
 
 const onPasswordClick = async () => {
-    const { state } = await navigator.permissions.query({
-        //@ts-ignore
-        name: "clipboard-write",
-    });
+    try {
+        const { state } = await navigator.permissions.query({
+            //@ts-ignore
+            name: "clipboard-write",
+        });
 
-    if (state == "denied") return;
+        if (state == "denied") return;
+    } catch (error) {}
 
     await navigator.clipboard.writeText(password.value);
     alert("Password was copied to clipboard");
