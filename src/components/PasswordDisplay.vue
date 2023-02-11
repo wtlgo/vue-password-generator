@@ -26,7 +26,7 @@ const onPasswordClick = async () => {
         name: "clipboard-write",
     });
 
-    if (state != "granted" && state != "prompt") return;
+    if (state != "denied") return;
 
     await navigator.clipboard.writeText(password.value);
     alert("Password was copied to clipboard");
