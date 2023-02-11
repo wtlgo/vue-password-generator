@@ -23,7 +23,6 @@ const usePasswordStore = defineStore("password", () => {
     const passwords = ref(load());
 
     watchEffect(() => {
-        console.log([...passwords.value]);
         save(passwords.value);
     });
 
