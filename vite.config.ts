@@ -9,7 +9,7 @@ export default defineConfig({
             registerType: "autoUpdate",
             manifest: {
                 name: "Password Generator",
-                short_name: "PW",
+                short_name: "PG",
                 icons: [
                     {
                         src: "/favicon.ico",
