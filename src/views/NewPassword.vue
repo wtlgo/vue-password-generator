@@ -1,3 +1,12 @@
+<style scoped>
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+</style>
+
 <template>
     <div class="container">
         <div class="row">

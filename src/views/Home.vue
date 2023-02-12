@@ -1,5 +1,10 @@
-<style lang="scss">
-@import "../node_modules/bootstrap/scss/bootstrap";
+<style scoped>
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 </style>
 
 <template>

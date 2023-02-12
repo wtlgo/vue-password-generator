@@ -4,6 +4,12 @@
 * {
     touch-action: none;
 }
+
+html,
+body,
+div#app {
+    min-height: 100vh;
+}
 </style>
 
 <template>

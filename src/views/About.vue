@@ -1,3 +1,12 @@
+<style scoped>
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+</style>
+
 <template>
     <div class="container">
         <div class="row">
@@ -19,7 +28,9 @@
         <div class="row">
             <div class="col" />
             <div class="col-auto">
-                <button class="btn btn-warning m-3" @click="onHome">Home</button>
+                <button class="btn btn-warning m-3" @click="onHome">
+                    Home
+                </button>
             </div>
             <div class="col" />
         </div>
