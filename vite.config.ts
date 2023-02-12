@@ -10,6 +10,7 @@ export default defineConfig({
             manifest: {
                 name: "Password Generator",
                 short_name: "PG",
+                background_color: "#000000",
                 icons: [
                     {
                         src: "/favicon.ico",
