@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@types/bootstrap': ^5.2.6
   '@vitejs/plugin-vue': ^4.0.0
   bootstrap: 5.3.0-alpha1
   crypto-random-string: ^5.0.0
@@ -23,6 +24,7 @@ dependencies:
   zod: 3.20.6
 
 devDependencies:
+  '@types/bootstrap': 5.2.6
   '@vitejs/plugin-vue': 4.0.0_vite@4.1.1+vue@3.2.47
   sass: 1.58.0
   typescript: 4.9.5
@@ -1459,7 +1461,6 @@ packages:
 
   /@popperjs/core/2.11.6:
     resolution: {integrity: sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==}
-    dev: false
 
   /@rollup/plugin-babel/5.3.1_3dsfpkpoyvuuxyfgdbpn4j4uzm:
     resolution: {integrity: sha512-WFfdLWU/xVWKeRQnKmIAQULUI7Il0gZnBIH/ZFO069wYIfPu+8zrfp/KMW0atmELoRDq8FbiP3VCss9MhCut7Q==}
@@ -1551,6 +1552,12 @@ packages:
       json5: 2.2.3
       magic-string: 0.25.9
       string.prototype.matchall: 4.0.8
+    dev: true
+
+  /@types/bootstrap/5.2.6:
+    resolution: {integrity: sha512-BlAc3YATdasbHoxMoBWODrSF6qwQO/E9X8wVxCCSa6rWjnaZfpkr2N6pUMCY6jj2+wf0muUtLySbvU9etX6YqA==}
+    dependencies:
+      '@popperjs/core': 2.11.6
     dev: true
 
   /@types/estree/0.0.39:
