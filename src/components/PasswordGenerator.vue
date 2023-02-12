@@ -31,7 +31,7 @@
         <input
             :id="specialId"
             type="checkbox"
-            v-model="speacial"
+            v-model="special"
             :disabled="loading"
         />
         <label class="ps-1" :for="specialId"> Special Characters </label>
@@ -59,7 +59,7 @@ const specialId = crypto.randomUUID();
 
 const generatorStore = useGeneratorStore();
 const { generate } = generatorStore;
-const { passwordLength, uppercase, numbers, speacial } =
+const { passwordLength, uppercase, numbers, special } =
     storeToRefs(generatorStore);
 
 const loading = ref(false);
