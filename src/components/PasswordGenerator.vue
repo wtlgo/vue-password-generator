@@ -1,41 +1,57 @@
 <template>
     <div align="center">
-        <input
-            :id="lengthId"
-            type="number"
-            v-model.number="passwordLength"
-            min="1"
-            :disabled="loading"
-        />
-        <label class="ps-1" :for="lengthId"> Length </label>
-        <br />
+        <div class="input-group">
+            <span class="input-group-text" :id="lengthId"> Length </span>
 
-        <input
-            :id="uppercaseId"
-            type="checkbox"
-            v-model="uppercase"
-            :disabled="loading"
-        />
-        <label class="ps-1" :for="uppercaseId"> Uppercase </label>
-        <br />
+            <input
+                class="form-control"
+                type="number"
+                v-model.number="passwordLength"
+                min="1"
+                :disabled="loading"
+                aria-label="Password Length"
+                :aria-describedby="lengthId"
+            />
+        </div>
 
-        <input
-            :id="numbersId"
-            type="checkbox"
-            v-model="numbers"
-            :disabled="loading"
-        />
-        <label class="ps-1" :for="numbersId"> Numbers </label>
-        <br />
+        <div class="form-check form-switch d-flex justify-content-center">
+            <input
+                class="form-check-input"
+                :id="uppercaseId"
+                type="checkbox"
+                v-model="uppercase"
+                :disabled="loading"
+            />
+            <label class="form-check-label mx-1" :for="uppercaseId">
+                Uppercase
+            </label>
+        </div>
 
-        <input
-            :id="specialId"
-            type="checkbox"
-            v-model="special"
-            :disabled="loading"
-        />
-        <label class="ps-1" :for="specialId"> Special Characters </label>
-        <br />
+        <div class="form-check form-switch d-flex justify-content-center">
+            <input
+                class="form-check-input"
+                :id="numbersId"
+                type="checkbox"
+                v-model="numbers"
+                :disabled="loading"
+            />
+            <label class="form-check-label mx-1" :for="numbersId">
+                Numbers
+            </label>
+        </div>
+
+        <div class="form-check form-switch d-flex justify-content-center">
+            <input
+                class="form-check-input"
+                :id="specialId"
+                type="checkbox"
+                v-model="special"
+                :disabled="loading"
+            />
+            <label class="form-check-label mx-1" :for="specialId">
+                Special Characters
+            </label>
+        </div>
 
         <button class="btn btn-primary" :disabled="loading" @click="onCreate">
             Generate Password
