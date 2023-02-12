@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@vitejs/plugin-vue': ^4.0.0
-  bootstrap: ^5.2.3
+  bootstrap: 5.3.0-alpha1
   crypto-random-string: ^5.0.0
   pinia: ^2.0.30
   sass: ^1.58.0
@@ -15,7 +15,7 @@ specifiers:
   zod: ^3.20.6
 
 dependencies:
-  bootstrap: 5.2.3_@popperjs+core@2.11.6
+  bootstrap: 5.3.0-alpha1_@popperjs+core@2.11.6
   crypto-random-string: 5.0.0
   pinia: 2.0.30_hmuptsblhheur2tugfgucj7gc4
   vue: 3.2.47
@@ -1798,8 +1798,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /bootstrap/5.2.3_@popperjs+core@2.11.6:
-    resolution: {integrity: sha512-cEKPM+fwb3cT8NzQZYEu4HilJ3anCrWqh3CHAok1p9jXqMPsPTBhU25fBckEJHJ/p+tTxTFTsFQGM+gaHpi3QQ==}
+  /bootstrap/5.3.0-alpha1_@popperjs+core@2.11.6:
+    resolution: {integrity: sha512-ABZpKK4ObS3kKlIqH+ZVDqoy5t/bhFG0oHTAzByUdon7YIom0lpCeTqRniDzJmbtcWkNe800VVPBiJgxSYTYew==}
     peerDependencies:
       '@popperjs/core': ^2.11.6
     dependencies:
