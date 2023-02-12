@@ -18,7 +18,9 @@
         </div>
         <div class="row">
             <div class="col" />
-            <password-display class="col-auto" :password="password" />
+            <div class="col-auto">
+                <password-display :password="password" />
+            </div>
             <div class="col" />
         </div>
         <div class="row">
