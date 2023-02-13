@@ -11,6 +11,7 @@ export default defineConfig({
                 name: "Password Generator",
                 short_name: "PG",
                 background_color: "#000000",
+                display: "standalone",
                 icons: [
                     {
                         src: "/favicon.ico",
