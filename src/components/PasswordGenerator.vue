@@ -1,5 +1,5 @@
 <template>
-    <div align="center">
+    <div align="center" class="bg-secondary p-4 rounded">
         <div class="input-group">
             <span class="input-group-text" :id="lengthId"> Length </span>
 

@@ -16,21 +16,18 @@
             </div>
             <div class="col" />
         </div>
-
-        <div class="row">
-            <div class="col" />
-            <div class="col-auto" align="center">
-                Author: <a href="https://github.com/wtlgo">@wtlgo</a> <br />
-                Yada yada yada...
+        <div class="row py-1">
+            <div class="col d-flex justify-content-center">
+                <div class="bg-secondary p-4 rounded">
+                    Author: <a href="https://github.com/wtlgo">@wtlgo</a> <br />
+                    Yada yada yada...
+                </div>
             </div>
-            <div class="col" />
         </div>
         <div class="row">
             <div class="col" />
             <div class="col-auto">
-                <button class="btn btn-warning m-3" @click="onHome">
-                    Home
-                </button>
+                <button class="btn btn-warning" @click="onHome">Home</button>
             </div>
             <div class="col" />
         </div>

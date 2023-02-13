@@ -15,12 +15,9 @@
             <div class="col" />
         </div>
         <div class="row py-1">
-            <div class="col" />
-            <password-generator
-                class="col-auto"
-                @new-password="onNewPassword"
-            />
-            <div class="col" />
+            <div class="col d-flex justify-content-center">
+                <password-generator @new-password="onNewPassword" />
+            </div>
         </div>
         <div class="row">
             <div class="col" />

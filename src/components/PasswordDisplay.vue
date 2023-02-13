@@ -2,6 +2,7 @@
 .pointer {
     cursor: pointer;
 }
+
 .wrap {
     white-space: pre-wrap;
     word-wrap: break-word;

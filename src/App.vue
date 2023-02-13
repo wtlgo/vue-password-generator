@@ -1,5 +1,13 @@
 <style lang="scss">
+$primary: #f90bcb;
+$secondary: #251929;
+$warning: darkorange;
+
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+input[type="checkbox"]:checked {
+    background-color: $primary !important;
+}
 
 * {
     touch-action: none;
@@ -12,6 +20,24 @@ div#app {
 }
 </style>
 
+<style lang="scss" scoped>
+.background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-image: url("./assets/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    z-index: -1;
+}
+</style>
+
 <template>
+    <div class="background" />
     <router-view />
 </template>
