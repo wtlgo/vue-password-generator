@@ -10,7 +10,7 @@ input[type="checkbox"]:checked {
 }
 
 * {
-    touch-action: none;
+    touch-action: pan-y;
 }
 
 html,
