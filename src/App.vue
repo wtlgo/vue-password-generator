@@ -28,10 +28,10 @@ div#app {
     left: 0;
     right: 0;
 
-    background-image: url("./assets/background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-image: url("/images/background.png");
 
     z-index: -1;
 }

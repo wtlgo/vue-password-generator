@@ -9,6 +9,7 @@ export default defineConfig({
         VitePWA({
             registerType: "autoUpdate",
             manifest,
+            includeAssets: ["images/*"],
         }),
         vue(),
     ],
