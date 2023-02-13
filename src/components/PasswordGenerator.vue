@@ -11,6 +11,8 @@
                 :disabled="loading"
                 aria-label="Password Length"
                 :aria-describedby="lengthId"
+                inputmode="numeric"
+                pattern="[0-9]*"
             />
         </div>
 
