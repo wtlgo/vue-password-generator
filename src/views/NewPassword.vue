@@ -26,7 +26,7 @@
         <div class="row">
             <div class="col" />
             <div class="col-auto">
-                <button class="btn btn-warning m-1" @click="onRegenerate">
+                <button class="btn btn-primary m-1" @click="onRegenerate">
                     Re-generate
                 </button>
                 <button class="btn btn-warning m-1" @click="onHome">
