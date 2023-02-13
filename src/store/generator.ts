@@ -36,7 +36,8 @@ const useGeneratorStore = defineStore("generator", () => {
     const passwordLengthStorage = ref(data.passwordLength);
     const passwordLength = computed({
         get: () => passwordLengthStorage.value,
-        set: (val) => (passwordLengthStorage.value = Math.max(1, val)),
+        set: (val) =>
+            (passwordLengthStorage.value = Math.max(1, Math.round(val))),
     });
 
     const uppercase = ref(data.uppercase);
