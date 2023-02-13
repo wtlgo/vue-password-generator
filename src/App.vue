@@ -22,7 +22,7 @@ div#app {
 
 <style lang="scss" scoped>
 .background {
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -34,6 +34,7 @@ div#app {
     background-image: url("/images/background.png");
 
     z-index: -1;
+    touch-action: none;
 }
 </style>
 
