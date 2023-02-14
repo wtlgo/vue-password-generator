@@ -17,23 +17,10 @@ div#app {
 
 .glow {
     color: #fff;
-    text-align: center;
-    -webkit-animation: glow 10s ease-in-out infinite alternate;
-    -moz-animation: glow 10s ease-in-out infinite alternate;
-    animation: glow 10s ease-in-out infinite alternate;
-}
 
-@keyframes glow {
-    from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px $primary,
-            0 0 40px $primary, 0 0 50px $primary, 0 0 60px $primary,
-            0 0 70px $primary;
-    }
-    to {
-        text-shadow: 0 0 20px #fff, 0 0 30px $pink-300, 0 0 40px $pink-300,
-            0 0 50px $pink-300, 0 0 60px $pink-300, 0 0 70px $pink-300,
-            0 0 80px $pink-300;
-    }
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px $primary,
+        0 0 40px $primary, 0 0 50px $primary, 0 0 60px $primary,
+        0 0 70px $primary;
 }
 </style>
 
