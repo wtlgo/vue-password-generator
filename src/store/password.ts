@@ -8,7 +8,7 @@ const zpasswords = z.array(z.string());
 const load = () => {
     try {
         return zpasswords.parse(
-            JSON.parse(localStorage.getItem(passwordsKey) ?? "[]")
+            JSON.parse(sessionStorage.getItem(passwordsKey) ?? "[]")
         );
     } catch (error) {
         return [];
@@ -16,7 +16,7 @@ const load = () => {
 };
 
 const save = (passwords: string[]) => {
-    localStorage.setItem(passwordsKey, JSON.stringify(passwords));
+    sessionStorage.setItem(passwordsKey, JSON.stringify(passwords));
 };
 
 const usePasswordStore = defineStore("password", () => {
