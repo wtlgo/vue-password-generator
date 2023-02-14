@@ -9,27 +9,23 @@
 
 <template>
     <div class="container">
-        <div class="row">
-            <div class="col" />
+        <div class="row justify-content-center">
             <div class="col-auto">
-                <h1>ABOUT US</h1>
+                <h1>About Us</h1>
             </div>
-            <div class="col" />
         </div>
-        <div class="row py-1">
-            <div class="col d-flex justify-content-center">
+        <div class="row py-1 justify-content-center">
+            <div class="col-auto">
                 <div class="bg-secondary p-4 rounded">
                     Author: <a href="https://github.com/wtlgo">@wtlgo</a> <br />
                     Yada yada yada...
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col" />
+        <div class="row justify-content-center">
             <div class="col-auto">
                 <button class="btn btn-secondary" @click="onHome">Home</button>
             </div>
-            <div class="col" />
         </div>
     </div>
 </template>

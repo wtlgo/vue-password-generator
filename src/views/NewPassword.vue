@@ -1,5 +1,5 @@
 <style scoped>
-.container {
+.container-full {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -8,34 +8,39 @@
 </style>
 
 <template>
-    <div class="container">
-        <div class="row">
-            <div class="col" />
+    <div class="container container-full">
+        <div class="row justify-content-center">
             <div class="col-auto">
                 <h1>Your password is:</h1>
             </div>
-            <div class="col" />
         </div>
-        <div class="row py-1">
-            <div class="col" />
+        <div class="row py-1 justify-content-center">
             <div class="col-auto">
-                <div class="bg-secondary p-4 rounded">
-                    <password-display :password="password" />
-                    <button class="btn btn-primary m-1" @click="onRegenerate">
-                        Re-generate
-                    </button>
+                <div class="bg-secondary p-4 rounded conainer-flex">
+                    <div class="row">
+                        <div class="col">
+                            <password-display :password="password" />
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-auto">
+                            <button
+                                class="btn btn-primary"
+                                @click="onRegenerate"
+                            >
+                                Re-generate
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col" />
         </div>
-        <div class="row">
-            <div class="col" />
+        <div class="row justify-content-center">
             <div class="col-auto">
                 <button class="btn btn-secondary m-1" @click="onHome">
                     Home
                 </button>
             </div>
-            <div class="col" />
         </div>
     </div>
 </template>

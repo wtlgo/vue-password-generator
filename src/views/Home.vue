@@ -9,10 +9,8 @@
 
 <template>
     <div class="container">
-        <div class="row">
-            <div class="col" />
+        <div class="row justify-content-center">
             <div class="col-auto"><h1>Password Generator</h1></div>
-            <div class="col" />
         </div>
         <div class="row py-1 justify-content-center">
             <div class="col-auto">
@@ -21,14 +19,12 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col" />
+        <div class="row justify-content-center">
             <div class="col-auto">
                 <button class="btn btn-secondary" @click="onAbout">
                     About
                 </button>
             </div>
-            <div class="col" />
         </div>
     </div>
 </template>
