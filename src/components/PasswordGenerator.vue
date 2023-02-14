@@ -1,5 +1,5 @@
 <template>
-    <form>
+    <form @submit.prevent>
         <div class="row mb-3">
             <label class="col-sm-3 col-form-label" :for="lengthId">
                 Length
