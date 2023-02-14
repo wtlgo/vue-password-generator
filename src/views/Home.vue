@@ -10,7 +10,7 @@
 <template>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-auto"><h1>Password Generator</h1></div>
+            <div class="col-auto"><h1 class="glow">Password Generator</h1></div>
         </div>
         <div class="row py-1 justify-content-center">
             <div class="col-auto">

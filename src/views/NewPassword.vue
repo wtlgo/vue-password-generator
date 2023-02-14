@@ -11,7 +11,7 @@
     <div class="container container-full">
         <div class="row justify-content-center">
             <div class="col-auto">
-                <h1>Your password is:</h1>
+                <h1 class="glow">Your password is:</h1>
             </div>
         </div>
         <div class="row py-1 justify-content-center">
