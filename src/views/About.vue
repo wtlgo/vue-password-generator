@@ -27,7 +27,7 @@
         <div class="row">
             <div class="col" />
             <div class="col-auto">
-                <button class="btn btn-warning" @click="onHome">Home</button>
+                <button class="btn btn-secondary" @click="onHome">Home</button>
             </div>
             <div class="col" />
         </div>

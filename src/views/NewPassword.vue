@@ -31,7 +31,7 @@
         <div class="row">
             <div class="col" />
             <div class="col-auto">
-                <button class="btn btn-warning m-1" @click="onHome">
+                <button class="btn btn-secondary m-1" @click="onHome">
                     Home
                 </button>
             </div>

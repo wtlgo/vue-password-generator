@@ -22,7 +22,9 @@
         <div class="row">
             <div class="col" />
             <div class="col-auto">
-                <button class="btn btn-warning" @click="onAbout">About</button>
+                <button class="btn btn-secondary" @click="onAbout">
+                    About
+                </button>
             </div>
             <div class="col" />
         </div>
