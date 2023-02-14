@@ -5,6 +5,9 @@ import { z } from "zod";
 const passwordsKey = "password-generator__passwords";
 const zpasswords = z.array(z.string());
 
+// TODO: Remove later
+localStorage.removeItem(passwordsKey);
+
 const load = () => {
     try {
         return zpasswords.parse(
