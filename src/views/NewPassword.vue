@@ -16,19 +16,21 @@
             </div>
             <div class="col" />
         </div>
-        <div class="row">
+        <div class="row py-1">
             <div class="col" />
             <div class="col-auto">
-                <password-display :password="password" />
+                <div class="bg-secondary p-4 rounded">
+                    <password-display :password="password" />
+                    <button class="btn btn-primary m-1" @click="onRegenerate">
+                        Re-generate
+                    </button>
+                </div>
             </div>
             <div class="col" />
         </div>
         <div class="row">
             <div class="col" />
             <div class="col-auto">
-                <button class="btn btn-secondary m-1" @click="onRegenerate">
-                    Re-generate
-                </button>
                 <button class="btn btn-warning m-1" @click="onHome">
                     Home
                 </button>
