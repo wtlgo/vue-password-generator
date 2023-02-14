@@ -14,9 +14,11 @@
             <div class="col-auto"><h1>Password Generator</h1></div>
             <div class="col" />
         </div>
-        <div class="row py-1">
-            <div class="col d-flex justify-content-center">
-                <password-generator @new-password="onNewPassword" />
+        <div class="row py-1 justify-content-center">
+            <div class="col-auto">
+                <div class="bg-secondary p-4 rounded">
+                    <password-generator @new-password="onNewPassword" />
+                </div>
             </div>
         </div>
         <div class="row">
