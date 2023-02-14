@@ -1,5 +1,5 @@
 <template>
-    <div align="center" class="bg-secondary p-4 rounded">
+    <div class="bg-secondary p-4 rounded">
         <div class="input-group">
             <span class="input-group-text" :id="lengthId"> Length </span>
 
@@ -16,7 +16,7 @@
             />
         </div>
 
-        <div class="form-check form-switch d-flex justify-content-center">
+        <div class="form-check form-switch">
             <input
                 class="form-check-input"
                 :id="uppercaseId"
@@ -29,7 +29,7 @@
             </label>
         </div>
 
-        <div class="form-check form-switch d-flex justify-content-center">
+        <div class="form-check form-switch">
             <input
                 class="form-check-input"
                 :id="numbersId"
@@ -42,7 +42,7 @@
             </label>
         </div>
 
-        <div class="form-check form-switch d-flex justify-content-center">
+        <div class="form-check form-switch">
             <input
                 class="form-check-input"
                 :id="specialId"
